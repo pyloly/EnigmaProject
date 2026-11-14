@@ -1,0 +1,393 @@
+Index: EnigmaDECODE.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/EnigmaDECODE.py b/EnigmaDECODE.py
+--- a/EnigmaDECODE.py	(revision ce8a8eae56bfd1a13a9a514ab84657672440998c)
++++ b/EnigmaDECODE.py	(date 1794647885694)
+@@ -1,0 +1,30 @@
++import random
++
++def generate_settings(key):
++    rng = random.Random(key)
++    rotors = rng.sample([1, 2, 3, 4, 5], 3)
++    positions = [ rng.randint(0, 25), rng.randint(0, 25), rng.randint(0, 25)]
++    reflector = rng.choice(["A", "B", "C"])
++    return rotors, positions, reflector
++
++
++
++
++def find_key(target_rotors, target_positions, target_reflector):
++    matches = []
++    for key in range(1000000):
++        rotors, positions, reflector = generate_settings(key)
++        if (rotors == target_rotors and
++            positions == target_positions and
++            reflector == target_reflector):
++            matches.append(key)
++    return matches
++
++
++result = find_key(
++    [2, 1, 5],
++    [1, 7, 5],
++    "B"
++)
++
++print("ключ:", result)
+\ No newline at end of file
+Index: EnigmaTime.py
+===================================================================
+diff --git a/EnigmaTime.py b/EnigmaTime.py
+deleted file mode 100644
+--- a/EnigmaTime.py	(revision ce8a8eae56bfd1a13a9a514ab84657672440998c)
++++ /dev/null	(revision ce8a8eae56bfd1a13a9a514ab84657672440998c)
+@@ -1,52 +0,0 @@
+-import random
+-import string
+-from datetime import datetime
+-
+-def generate_cipher():
+-    t = datetime.now()
+-    key = (
+-        t.year + t.month * 13 + t.day * 17 +
+-        t.hour * 19 + t.minute * 23 +
+-        t.second * 29 + (t.microsecond // 1000) * 997
+-    ) % 1000000
+-    alphabet = list(string.ascii_uppercase + "!@#$%^&*+-/?")
+-    rng = random.Random(key)
+-    shuffled = alphabet.copy()
+-    rng.shuffle(shuffled)
+-    cipher = dict(zip(alphabet, shuffled))
+-    return cipher, key
+-
+-
+-def encrypt(text, cipher):
+-    result = ""
+-    for char in text.upper():
+-        if char in cipher:
+-            result += cipher[char]
+-        else:
+-            result += char
+-    return result
+-
+-
+-def decrypt(text, cipher):
+-    reverse_cipher = {v: k for k, v in cipher.items()}
+-    result = ""
+-    for char in text:
+-        if char in reverse_cipher:
+-            result += reverse_cipher[char]
+-        else:
+-            result += char
+-    return result
+-
+-
+-cipher, key = generate_cipher()
+-print("=== ENIGMA PYTHON ===")
+-print("Ключ:", key)
+-text = input("Введите текст: ")
+-
+-encrypted = encrypt(text, cipher)
+-
+-
+-print(encrypted)
+-
+-print("Расшифрованный текст:")
+-print(decrypt(encrypted, cipher))
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a2cff7a8-26c8-4e66-9022-b7124fb50db8\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/Enigma.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Enigma.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/EnigmaDECODE.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/EnigmaTime.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"NextEditCompletionFeaturesState\">\r\n    <decayedCancelled>\r\n      <entry key=\"MS100\" value=\"1.0\" />\r\n      <entry key=\"MS500\" value=\"1.0\" />\r\n      <entry key=\"S2\" value=\"1.0000001919694954\" />\r\n      <entry key=\"S5\" value=\"1.0025065353167966\" />\r\n      <entry key=\"S10\" value=\"1.0810613598771346\" />\r\n      <entry key=\"S30\" value=\"2.1000100517273084\" />\r\n      <entry key=\"S60\" value=\"3.302619270926124\" />\r\n      <entry key=\"M2\" value=\"4.595180586791447\" />\r\n      <entry key=\"M5\" value=\"6.859050048126273\" />\r\n      <entry key=\"M10\" value=\"11.139926531642484\" />\r\n      <entry key=\"M15\" value=\"15.551632361037036\" />\r\n      <entry key=\"M30\" value=\"25.00770087703311\" />\r\n      <entry key=\"H1\" value=\"33.62765765608358\" />\r\n      <entry key=\"H2\" value=\"39.5686952899838\" />\r\n      <entry key=\"H4\" value=\"43.074691015117466\" />\r\n      <entry key=\"D1\" value=\"46.314424243193756\" />\r\n      <entry key=\"W1\" value=\"46.90126157315645\" />\r\n    </decayedCancelled>\r\n    <decayedSelected>\r\n      <entry key=\"MS100\" value=\"1.6371755696146398E-11\" />\r\n      <entry key=\"MS500\" value=\"0.0069633632491950875\" />\r\n      <entry key=\"S2\" value=\"0.2888715440398972\" />\r\n      <entry key=\"S5\" value=\"0.6085298762367943\" />\r\n      <entry key=\"S10\" value=\"0.7800832495553243\" />\r\n      <entry key=\"S30\" value=\"0.9205491790747921\" />\r\n      <entry key=\"S60\" value=\"0.9596583029578302\" />\r\n      <entry key=\"M2\" value=\"0.9995752876798347\" />\r\n      <entry key=\"M5\" value=\"1.310118066706449\" />\r\n      <entry key=\"M10\" value=\"1.8345502770512137\" />\r\n      <entry key=\"M15\" value=\"2.202194342830248\" />\r\n      <entry key=\"M30\" value=\"2.820750025047514\" />\r\n      <entry key=\"H1\" value=\"3.307202062740158\" />\r\n      <entry key=\"H2\" value=\"3.6216783969982465\" />\r\n      <entry key=\"H4\" value=\"3.801914730478134\" />\r\n      <entry key=\"D1\" value=\"3.96565614584898\" />\r\n      <entry key=\"W1\" value=\"3.9950599225793844\" />\r\n    </decayedSelected>\r\n    <decayedShown>\r\n      <entry key=\"MS100\" value=\"1.5996013231026692E-4\" />\r\n      <entry key=\"MS500\" value=\"0.17537403972167945\" />\r\n      <entry key=\"S2\" value=\"0.8348271357055939\" />\r\n      <entry key=\"S5\" value=\"1.3550150565288528\" />\r\n      <entry key=\"S10\" value=\"1.7047827781011653\" />\r\n      <entry key=\"S30\" value=\"2.9250242377158204\" />\r\n      <entry key=\"S60\" value=\"4.1920936822649555\" />\r\n      <entry key=\"M2\" value=\"5.544336240735793\" />\r\n      <entry key=\"M5\" value=\"8.13463311431105\" />\r\n      <entry key=\"M10\" value=\"12.946905451443197\" />\r\n      <entry key=\"M15\" value=\"17.72969392962765\" />\r\n      <entry key=\"M30\" value=\"27.8108676410972\" />\r\n      <entry key=\"H1\" value=\"36.923711055261016\" />\r\n      <entry key=\"H2\" value=\"43.18400950058296\" />\r\n      <entry key=\"H4\" value=\"46.87319355848605\" />\r\n      <entry key=\"D1\" value=\"50.279476518035274\" />\r\n      <entry key=\"W1\" value=\"50.89623432173714\" />\r\n    </decayedShown>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 6,\r\n  \"fromUser\": false\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"3M578cuTpSzQMeWF82K9yrbp5Fi\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.EnigmaDECODE.executor\": \"Run\",\r\n    \"Python.EnigmaTime.executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\r\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"junie.onboarding.icon.badge.shown\": \"true\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.jshint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.jshint\": \"\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"python.packages.toolwindow.project.migrated.to.right.top.v2\": \"true\",\r\n    \"to.speed.mode.migration.done\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"ChangesTree.GroupingKeys\": [\r\n      \"directory\",\r\n      \"repository\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a2cff7a8-26c8-4e66-9022-b7124fb50db8\" name=\"Changes\" comment=\"\" />\r\n      <created>1794628416891</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1794628416891</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ce8a8eae56bfd1a13a9a514ab84657672440998c)
++++ b/.idea/workspace.xml	(date 1794647517965)
+@@ -4,15 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a2cff7a8-26c8-4e66-9022-b7124fb50db8" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/Enigma.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Enigma.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/EnigmaDECODE.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/EnigmaTime.py" afterDir="false" />
++    <list default="true" id="a2cff7a8-26c8-4e66-9022-b7124fb50db8" name="Changes" comment="Enigma 1.0">
++      <change afterPath="$PROJECT_DIR$/EnigmaCODE.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/EnigmaKey.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Enigma.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/EnigmaDECODE.py" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaDECODE.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/EnigmaTime.py" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -27,65 +25,78 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_AUTO_UPDATE" value="true" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "pyloly"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/pyloly/EnigmaProject.git",
++    "accountId": "ec6a6f83-39eb-42bc-93e8-9747302c03fd"
++  }
++}]]></component>
+   <component name="NextEditCompletionFeaturesState">
+     <decayedCancelled>
+       <entry key="MS100" value="1.0" />
+       <entry key="MS500" value="1.0" />
+-      <entry key="S2" value="1.0000001919694954" />
+-      <entry key="S5" value="1.0025065353167966" />
+-      <entry key="S10" value="1.0810613598771346" />
+-      <entry key="S30" value="2.1000100517273084" />
+-      <entry key="S60" value="3.302619270926124" />
+-      <entry key="M2" value="4.595180586791447" />
+-      <entry key="M5" value="6.859050048126273" />
+-      <entry key="M10" value="11.139926531642484" />
+-      <entry key="M15" value="15.551632361037036" />
+-      <entry key="M30" value="25.00770087703311" />
+-      <entry key="H1" value="33.62765765608358" />
+-      <entry key="H2" value="39.5686952899838" />
+-      <entry key="H4" value="43.074691015117466" />
+-      <entry key="D1" value="46.314424243193756" />
+-      <entry key="W1" value="46.90126157315645" />
++      <entry key="S2" value="1.0000163482984115" />
++      <entry key="S5" value="1.012178921663173" />
++      <entry key="S10" value="1.1128127105308974" />
++      <entry key="S30" value="1.615024139787954" />
++      <entry key="S60" value="2.0605197105506825" />
++      <entry key="M2" value="2.440644959412091" />
++      <entry key="M5" value="3.07318965543092" />
++      <entry key="M10" value="6.979568720436575" />
++      <entry key="M15" value="14.889776576821953" />
++      <entry key="M30" value="44.33771366268719" />
++      <entry key="H1" value="87.3454870800188" />
++      <entry key="H2" value="131.25862220097446" />
++      <entry key="H4" value="167.49296490104533" />
++      <entry key="D1" value="212.52844914947522" />
++      <entry key="W1" value="222.29891122034235" />
+     </decayedCancelled>
+     <decayedSelected>
+-      <entry key="MS100" value="1.6371755696146398E-11" />
+-      <entry key="MS500" value="0.0069633632491950875" />
+-      <entry key="S2" value="0.2888715440398972" />
+-      <entry key="S5" value="0.6085298762367943" />
+-      <entry key="S10" value="0.7800832495553243" />
+-      <entry key="S30" value="0.9205491790747921" />
+-      <entry key="S60" value="0.9596583029578302" />
+-      <entry key="M2" value="0.9995752876798347" />
+-      <entry key="M5" value="1.310118066706449" />
+-      <entry key="M10" value="1.8345502770512137" />
+-      <entry key="M15" value="2.202194342830248" />
+-      <entry key="M30" value="2.820750025047514" />
+-      <entry key="H1" value="3.307202062740158" />
+-      <entry key="H2" value="3.6216783969982465" />
+-      <entry key="H4" value="3.801914730478134" />
+-      <entry key="D1" value="3.96565614584898" />
+-      <entry key="W1" value="3.9950599225793844" />
++      <entry key="MS100" value="0.0" />
++      <entry key="MS500" value="0.0" />
++      <entry key="S2" value="2.4615273065056603E-187" />
++      <entry key="S5" value="2.2723847348323655E-75" />
++      <entry key="S10" value="4.766953675915433E-38" />
++      <entry key="S30" value="3.6258818125587764E-13" />
++      <entry key="S60" value="6.021620216247392E-7" />
++      <entry key="M2" value="7.802178934451302E-4" />
++      <entry key="M5" value="0.07334186433690125" />
++      <entry key="M10" value="0.6269639370067883" />
++      <entry key="M15" value="1.7011290044140641" />
++      <entry key="M30" value="5.673521631024634" />
++      <entry key="H1" value="11.340346986972968" />
++      <entry key="H2" value="16.785959714146724" />
++      <entry key="H4" value="20.96318473357168" />
++      <entry key="D1" value="25.813669631179632" />
++      <entry key="W1" value="26.82518440332727" />
+     </decayedSelected>
+     <decayedShown>
+-      <entry key="MS100" value="1.5996013231026692E-4" />
+-      <entry key="MS500" value="0.17537403972167945" />
+-      <entry key="S2" value="0.8348271357055939" />
+-      <entry key="S5" value="1.3550150565288528" />
+-      <entry key="S10" value="1.7047827781011653" />
+-      <entry key="S30" value="2.9250242377158204" />
+-      <entry key="S60" value="4.1920936822649555" />
+-      <entry key="M2" value="5.544336240735793" />
+-      <entry key="M5" value="8.13463311431105" />
+-      <entry key="M10" value="12.946905451443197" />
+-      <entry key="M15" value="17.72969392962765" />
+-      <entry key="M30" value="27.8108676410972" />
+-      <entry key="H1" value="36.923711055261016" />
+-      <entry key="H2" value="43.18400950058296" />
+-      <entry key="H4" value="46.87319355848605" />
+-      <entry key="D1" value="50.279476518035274" />
+-      <entry key="W1" value="50.89623432173714" />
++      <entry key="MS100" value="9.984155988254156E-5" />
++      <entry key="MS500" value="0.15843906525430304" />
++      <entry key="S2" value="0.6309191048032444" />
++      <entry key="S5" value="0.8424216552165439" />
++      <entry key="S10" value="1.0178117341812662" />
++      <entry key="S30" value="1.5743882241124356" />
++      <entry key="S60" value="2.0377138816457365" />
++      <entry key="M2" value="2.429196588810602" />
++      <entry key="M5" value="3.140526652398029" />
++      <entry key="M10" value="7.597022224117564" />
++      <entry key="M15" value="16.57505103188967" />
++      <entry key="M30" value="49.985239731684025" />
++      <entry key="H1" value="98.65963829938464" />
++      <entry key="H2" value="148.0247751909459" />
++      <entry key="H4" value="188.44349081731855" />
++      <entry key="D1" value="238.33944088623858" />
++      <entry key="W1" value="249.12369551443115" />
+     </decayedShown>
+   </component>
+   <component name="ProjectColorInfo"><![CDATA[{
+@@ -100,7 +111,9 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "Python.EnigmaCODE.executor": "Run",
+     "Python.EnigmaDECODE.executor": "Run",
++    "Python.EnigmaKey.executor": "Run",
+     "Python.EnigmaTime.executor": "Run",
+     "Python.main.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+@@ -108,7 +121,7 @@
+     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+     "codeWithMe.voiceChat.enabledByDefault": "false",
+     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+-    "git-widget-placeholder": "master",
++    "git-widget-placeholder": "main",
+     "junie.onboarding.icon.badge.shown": "true",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.jshint": "true",
+@@ -142,9 +155,33 @@
+       <option name="presentableId" value="Default" />
+       <updated>1794628416891</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Enigma 1.0">
++      <option name="closed" value="true" />
++      <created>1794638754119</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1794638754119</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Enigma 1.0" />
++    <option name="LAST_COMMIT_MESSAGE" value="Enigma 1.0" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: EnigmaCODE.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/EnigmaCODE.py b/EnigmaCODE.py
+new file mode 100644
+--- /dev/null	(date 1794645986374)
++++ b/EnigmaCODE.py	(date 1794645986374)
+@@ -0,0 +1,22 @@
++from EnigmaKey import EKey
++import random
++def Enigma_Coding(text, key):
++    Amount_key = 0
++    The_key = list
++    symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
++    key_symbols = "0123456789!@#$%^&*"
++    result = list
++    for letter in text:
++        rng = random.Random(key + ord(letter))
++        code = ""
++        for i in range(3):
++            code += rng.choice(symbols)
++        result += code
++        for j in range(3):
++            The_key.append(rng.choice(key_symbols))
++
++
++
++
++
++
+Index: EnigmaKey.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/EnigmaKey.py b/EnigmaKey.py
+new file mode 100644
+--- /dev/null	(date 1794646747348)
++++ b/EnigmaKey.py	(date 1794646747348)
+@@ -0,0 +1,35 @@
++from datetime import datetime as dt
++import random
++
++def EKey():
++    t = dt.now()
++
++    TheKey = ((
++        t.year +
++        t.month   +
++        t.day  +
++        t.hour  +
++        t.minute  +
++        t.second)  + (t.microsecond*10000)) // 10000
++
++    rng = random.Random(TheKey)
++
++    rotors = rng.sample([1, 2, 3, 4, 5], 3)
++
++    positions = [
++        rng.randint(0, 25),
++        rng.randint(0, 25),
++        rng.randint(0, 25)
++    ]
++
++    reflector = rng.choice(["A", "B", "C"])
++
++    return {
++        "key": TheKey,
++        "rotors": rotors,
++        "positions": positions,
++        "reflector": reflector
++    }
++
++
++print(EKey())
+\ No newline at end of file
