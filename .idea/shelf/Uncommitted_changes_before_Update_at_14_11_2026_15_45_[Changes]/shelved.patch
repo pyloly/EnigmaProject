@@ -1,0 +1,158 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a2cff7a8-26c8-4e66-9022-b7124fb50db8\" name=\"Changes\" comment=\"Enigma 1.0\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"pyloly\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/pyloly/EnigmaProject.git\",\r\n    \"accountId\": \"ec6a6f83-39eb-42bc-93e8-9747302c03fd\"\r\n  }\r\n}]]></component>\r\n  <component name=\"NextEditCompletionFeaturesState\">\r\n    <decayedCancelled>\r\n      <entry key=\"MS100\" value=\"1.0000000047481084\" />\r\n      <entry key=\"MS500\" value=\"1.0216450742860324\" />\r\n      <entry key=\"S2\" value=\"1.4242346009344444\" />\r\n      <entry key=\"S5\" value=\"1.959416997272709\" />\r\n      <entry key=\"S10\" value=\"2.352702385131722\" />\r\n      <entry key=\"S30\" value=\"2.808504830763735\" />\r\n      <entry key=\"S60\" value=\"3.437595228678545\" />\r\n      <entry key=\"M2\" value=\"4.841657120231028\" />\r\n      <entry key=\"M5\" value=\"7.799852598369373\" />\r\n      <entry key=\"M10\" value=\"12.331732899045226\" />\r\n      <entry key=\"M15\" value=\"16.824024882776143\" />\r\n      <entry key=\"M30\" value=\"26.581030001003647\" />\r\n      <entry key=\"H1\" value=\"35.65524185988315\" />\r\n      <entry key=\"H2\" value=\"41.99261528916664\" />\r\n      <entry key=\"H4\" value=\"45.76003517078421\" />\r\n      <entry key=\"D1\" value=\"49.25787275243407\" />\r\n      <entry key=\"W1\" value=\"49.89307632880123\" />\r\n    </decayedCancelled>\r\n    <decayedSelected>\r\n      <entry key=\"MS100\" value=\"0.0\" />\r\n      <entry key=\"MS500\" value=\"2.0381227162512785E-94\" />\r\n      <entry key=\"S2\" value=\"3.7783969533217104E-24\" />\r\n      <entry key=\"S5\" value=\"4.274871188120911E-10\" />\r\n      <entry key=\"S10\" value=\"2.067576162592544E-5\" />\r\n      <entry key=\"S30\" value=\"0.027446513416177376\" />\r\n      <entry key=\"S60\" value=\"0.1657054220296426\" />\r\n      <entry key=\"M2\" value=\"0.4153608481493949\" />\r\n      <entry key=\"M5\" value=\"0.922049962385445\" />\r\n      <entry key=\"M10\" value=\"1.5390460966713653\" />\r\n      <entry key=\"M15\" value=\"1.958861131683237\" />\r\n      <entry key=\"M30\" value=\"2.660348939771547\" />\r\n      <entry key=\"H1\" value=\"3.2117943643607214\" />\r\n      <entry key=\"H2\" value=\"3.5690561733567283\" />\r\n      <entry key=\"H4\" value=\"3.774193155071427\" />\r\n      <entry key=\"D1\" value=\"3.960822190128108\" />\r\n      <entry key=\"W1\" value=\"3.9943638735015137\" />\r\n    </decayedSelected>\r\n    <decayedShown>\r\n      <entry key=\"MS100\" value=\"0.9592641239435356\" />\r\n      <entry key=\"MS500\" value=\"1.0132421038732236\" />\r\n      <entry key=\"S2\" value=\"1.421541464239229\" />\r\n      <entry key=\"S5\" value=\"1.9579767269698003\" />\r\n      <entry key=\"S10\" value=\"2.3518550821517854\" />\r\n      <entry key=\"S30\" value=\"2.832765643011122\" />\r\n      <entry key=\"S60\" value=\"3.5910055448298013\" />\r\n      <entry key=\"M2\" value=\"5.235976477249166\" />\r\n      <entry key=\"M5\" value=\"8.697560504882967\" />\r\n      <entry key=\"M10\" value=\"13.847630359327395\" />\r\n      <entry key=\"M15\" value=\"18.761407526983287\" />\r\n      <entry key=\"M30\" value=\"29.224789395079235\" />\r\n      <entry key=\"H1\" value=\"38.85620610430692\" />\r\n      <entry key=\"H2\" value=\"45.55539820670043\" />\r\n      <entry key=\"H4\" value=\"49.53084024862195\" />\r\n      <entry key=\"D1\" value=\"53.2180916792899\" />\r\n      <entry key=\"W1\" value=\"53.887353025155015\" />\r\n    </decayedShown>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6,\r\n  &quot;fromUser&quot;: false\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3M578cuTpSzQMeWF82K9yrbp5Fi\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;Python.EnigmaDECODE.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.EnigmaKey.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.EnigmaTime.executor&quot;: &quot;Run&quot;,\r\n    &quot;Python.main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,\r\n    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;repository&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a2cff7a8-26c8-4e66-9022-b7124fb50db8\" name=\"Changes\" comment=\"\" />\r\n      <created>1794628416891</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1794628416891</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Enigma 1.0\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1794648364340</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1794648364341</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Enigma 1.0\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1794648395907</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1794648395907</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Enigma 1.1\" />\r\n    <MESSAGE value=\"Enigma 1.0\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Enigma 1.0\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision dcc775f39f7a72002d000bcf37703640d2488869)
++++ b/.idea/workspace.xml	(date 1794648531846)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a2cff7a8-26c8-4e66-9022-b7124fb50db8" name="Changes" comment="Enigma 1.0" />
++    <list default="true" id="a2cff7a8-26c8-4e66-9022-b7124fb50db8" name="Changes" comment="Enigma 1.2" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -35,61 +35,61 @@
+ }]]></component>
+   <component name="NextEditCompletionFeaturesState">
+     <decayedCancelled>
+-      <entry key="MS100" value="1.0000000047481084" />
+-      <entry key="MS500" value="1.0216450742860324" />
+-      <entry key="S2" value="1.4242346009344444" />
+-      <entry key="S5" value="1.959416997272709" />
+-      <entry key="S10" value="2.352702385131722" />
+-      <entry key="S30" value="2.808504830763735" />
+-      <entry key="S60" value="3.437595228678545" />
+-      <entry key="M2" value="4.841657120231028" />
+-      <entry key="M5" value="7.799852598369373" />
+-      <entry key="M10" value="12.331732899045226" />
+-      <entry key="M15" value="16.824024882776143" />
+-      <entry key="M30" value="26.581030001003647" />
+-      <entry key="H1" value="35.65524185988315" />
+-      <entry key="H2" value="41.99261528916664" />
+-      <entry key="H4" value="45.76003517078421" />
+-      <entry key="D1" value="49.25787275243407" />
+-      <entry key="W1" value="49.89307632880123" />
++      <entry key="MS100" value="1.0" />
++      <entry key="MS500" value="1.0" />
++      <entry key="S2" value="1.0000000000000013" />
++      <entry key="S5" value="1.0000011500383483" />
++      <entry key="S10" value="1.0011174044818512" />
++      <entry key="S30" value="1.1776469253526731" />
++      <entry key="S60" value="1.8827965087110343" />
++      <entry key="M2" value="3.524792796086779" />
++      <entry key="M5" value="7.227658341886893" />
++      <entry key="M10" value="12.182874013946204" />
++      <entry key="M15" value="16.83899822359392" />
++      <entry key="M30" value="26.987900913488648" />
++      <entry key="H1" value="36.57719906839783" />
++      <entry key="H2" value="43.35471294081729" />
++      <entry key="H4" value="47.41159089099751" />
++      <entry key="D1" value="51.19522451997301" />
++      <entry key="W1" value="51.88400776825809" />
+     </decayedCancelled>
+     <decayedSelected>
+       <entry key="MS100" value="0.0" />
+-      <entry key="MS500" value="2.0381227162512785E-94" />
+-      <entry key="S2" value="3.7783969533217104E-24" />
+-      <entry key="S5" value="4.274871188120911E-10" />
+-      <entry key="S10" value="2.067576162592544E-5" />
+-      <entry key="S30" value="0.027446513416177376" />
+-      <entry key="S60" value="0.1657054220296426" />
+-      <entry key="M2" value="0.4153608481493949" />
+-      <entry key="M5" value="0.922049962385445" />
+-      <entry key="M10" value="1.5390460966713653" />
+-      <entry key="M15" value="1.958861131683237" />
+-      <entry key="M30" value="2.660348939771547" />
+-      <entry key="H1" value="3.2117943643607214" />
+-      <entry key="H2" value="3.5690561733567283" />
+-      <entry key="H4" value="3.774193155071427" />
+-      <entry key="D1" value="3.960822190128108" />
+-      <entry key="W1" value="3.9943638735015137" />
++      <entry key="MS500" value="2.7080247404709513E-94" />
++      <entry key="S2" value="4.056609066200542E-24" />
++      <entry key="S5" value="4.3981016527315527E-10" />
++      <entry key="S10" value="2.0972049964024985E-5" />
++      <entry key="S30" value="0.02831270602037939" />
++      <entry key="S60" value="0.19319571027556248" />
++      <entry key="M2" value="0.575584093817017" />
++      <entry key="M5" value="1.3403962842211141" />
++      <entry key="M10" value="2.1199591146493306" />
++      <entry key="M15" value="2.6234516108836363" />
++      <entry key="M30" value="3.4465415680954514" />
++      <entry key="H1" value="4.0869001722157305" />
++      <entry key="H2" value="4.5007924542547" />
++      <entry key="H4" value="4.738392048453335" />
++      <entry key="D1" value="4.9546022441585675" />
++      <entry key="W1" value="4.993468811420559" />
+     </decayedSelected>
+     <decayedShown>
+-      <entry key="MS100" value="0.9592641239435356" />
+-      <entry key="MS500" value="1.0132421038732236" />
+-      <entry key="S2" value="1.421541464239229" />
+-      <entry key="S5" value="1.9579767269698003" />
+-      <entry key="S10" value="2.3518550821517854" />
+-      <entry key="S30" value="2.832765643011122" />
+-      <entry key="S60" value="3.5910055448298013" />
+-      <entry key="M2" value="5.235976477249166" />
+-      <entry key="M5" value="8.697560504882967" />
+-      <entry key="M10" value="13.847630359327395" />
+-      <entry key="M15" value="18.761407526983287" />
+-      <entry key="M30" value="29.224789395079235" />
+-      <entry key="H1" value="38.85620610430692" />
+-      <entry key="H2" value="45.55539820670043" />
+-      <entry key="H4" value="49.53084024862195" />
+-      <entry key="D1" value="53.2180916792899" />
+-      <entry key="W1" value="53.887353025155015" />
++      <entry key="MS100" value="0.9526379980439373" />
++      <entry key="MS500" value="0.9903428719330246" />
++      <entry key="S2" value="0.9975769252644557" />
++      <entry key="S5" value="0.9990312137742763" />
++      <entry key="S10" value="1.0006509822981813" />
++      <entry key="S30" value="1.2049283379533287" />
++      <entry key="S60" value="2.0715482724127194" />
++      <entry key="M2" value="4.088938923500165" />
++      <entry key="M5" value="8.549110530495561" />
++      <entry key="M10" value="14.282324698632184" />
++      <entry key="M15" value="19.442569185109107" />
++      <entry key="M30" value="30.41837662089695" />
++      <entry key="H1" value="40.65336042240392" />
++      <entry key="H2" value="47.84920907695265" />
++      <entry key="H4" value="52.14656140005634" />
++      <entry key="D1" value="56.14921437891174" />
++      <entry key="W1" value="56.877388005316746" />
+     </decayedShown>
+   </component>
+   <component name="ProjectColorInfo">{
+@@ -163,7 +163,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1794648395907</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Enigma 1.2">
++      <option name="closed" value="true" />
++      <created>1794648458169</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1794648458169</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -172,6 +180,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Enigma 1.1" />
+     <MESSAGE value="Enigma 1.0" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Enigma 1.0" />
++    <MESSAGE value="Enigma 1.2" />
++    <option name="LAST_COMMIT_MESSAGE" value="Enigma 1.2" />
+   </component>
+ </project>
+\ No newline at end of file
