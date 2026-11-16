@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2cff7a8-26c8-4e66-9022-b7124fb50db8" name="Changes" comment="Merge remote-tracking branch 'origin/main'">
-      <change beforePath="$PROJECT_DIR$/Enigma.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma_Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnigmaTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma_Protatip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poligon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EngimaCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/EngimaCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnigmaDECODE.py" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaDECODE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnigmaKey.py" beforeDir="false" afterPath="$PROJECT_DIR$/EnigmaKey.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enigma_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma_Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enigma_Protatip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma_Protatip.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,60 +50,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000064404" />
-      <entry key="S2" value="1.0016772968068524" />
-      <entry key="S5" value="1.1089591547660036" />
-      <entry key="S10" value="1.528668994570908" />
-      <entry key="S30" value="2.6514420857702996" />
-      <entry key="S60" value="3.228093465161444" />
-      <entry key="M2" value="3.879835143172407" />
-      <entry key="M5" value="7.101631577873093" />
-      <entry key="M10" value="12.834162884114921" />
-      <entry key="M15" value="18.05721257063677" />
-      <entry key="M30" value="29.586307125479163" />
-      <entry key="H1" value="40.91794761669462" />
-      <entry key="H2" value="49.182167801943876" />
-      <entry key="H4" value="54.22185288147587" />
-      <entry key="D1" value="58.980761867529274" />
-      <entry key="W1" value="59.852948348051804" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000689421075337" />
+      <entry key="S5" value="1.0327613554228243" />
+      <entry key="S10" value="1.257041689814113" />
+      <entry key="S30" value="2.1425256712541563" />
+      <entry key="S60" value="3.2882367711996476" />
+      <entry key="M2" value="5.896826714538282" />
+      <entry key="M5" value="13.0156413630869" />
+      <entry key="M10" value="24.07838884774417" />
+      <entry key="M15" value="35.74258771742627" />
+      <entry key="M30" value="73.38773539595344" />
+      <entry key="H1" value="142.94929351253137" />
+      <entry key="H2" value="230.05847862631475" />
+      <entry key="H4" value="305.1801725771695" />
+      <entry key="D1" value="395.75190684560573" />
+      <entry key="W1" value="414.7235941722546" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.0755809455901667E-118" />
-      <entry key="S5" value="8.449983677458853E-48" />
-      <entry key="S10" value="2.906885563185943E-24" />
-      <entry key="S30" value="1.4271709241161242E-8" />
-      <entry key="S60" value="1.1948987924770365E-4" />
-      <entry key="M2" value="0.01115379759348499" />
-      <entry key="M5" value="0.2169468431993101" />
-      <entry key="M10" value="0.7465365374478442" />
-      <entry key="M15" value="1.2093071179468224" />
-      <entry key="M30" value="2.0902829778330783" />
-      <entry key="H1" value="2.8469574201738364" />
-      <entry key="H2" value="3.360237725851473" />
-      <entry key="H4" value="3.6621188325170064" />
-      <entry key="D1" value="3.9409724429349975" />
-      <entry key="W1" value="3.9914980206213952" />
+      <entry key="MS100" value="5.50165841332372E-280" />
+      <entry key="MS500" value="1.4063671853407289E-56" />
+      <entry key="S2" value="1.0889919794065736E-14" />
+      <entry key="S5" value="2.5990215018350012E-6" />
+      <entry key="S10" value="0.001612154623493444" />
+      <entry key="S30" value="0.11916718141695533" />
+      <entry key="S60" value="0.3922094866267585" />
+      <entry key="M2" value="0.8778845507659597" />
+      <entry key="M5" value="1.9319921006150982" />
+      <entry key="M10" value="3.5802499517416893" />
+      <entry key="M15" value="5.405671411452977" />
+      <entry key="M30" value="12.024367956356206" />
+      <entry key="H1" value="25.48802159687041" />
+      <entry key="H2" value="42.49837660048386" />
+      <entry key="H4" value="56.90063239240089" />
+      <entry key="D1" value="73.88745626990895" />
+      <entry key="W1" value="77.39578319930136" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9726549474122855" />
-      <entry key="MS500" value="0.9944701686796104" />
-      <entry key="S2" value="1.0002890619677929" />
-      <entry key="S5" value="1.1083247503411369" />
-      <entry key="S10" value="1.5281825964456703" />
-      <entry key="S30" value="2.651116701947825" />
-      <entry key="S60" value="3.2279970277604937" />
-      <entry key="M2" value="3.8902828891393866" />
-      <entry key="M5" value="7.312715862602157" />
-      <entry key="M10" value="13.569357849995106" />
-      <entry key="M15" value="19.25316865282389" />
-      <entry key="M30" value="31.663499682650187" />
-      <entry key="H1" value="43.75527426568118" />
-      <entry key="H2" value="52.53648304617564" />
-      <entry key="H4" value="57.88067589922416" />
-      <entry key="D1" value="62.92113264868811" />
-      <entry key="W1" value="63.8443590501988" />
+      <entry key="MS100" value="7.158416438182858E-5" />
+      <entry key="MS500" value="0.14823931242636848" />
+      <entry key="S2" value="0.6205457717346944" />
+      <entry key="S5" value="0.8540815689803031" />
+      <entry key="S10" value="1.1466698191932938" />
+      <entry key="S30" value="2.1829136332794308" />
+      <entry key="S60" value="3.607037315410126" />
+      <entry key="M2" value="6.705937524495651" />
+      <entry key="M5" value="14.884571021143175" />
+      <entry key="M10" value="27.596956912870322" />
+      <entry key="M15" value="41.087156825999855" />
+      <entry key="M30" value="85.35243198494068" />
+      <entry key="H1" value="168.38285912775058" />
+      <entry key="H2" value="272.5150828773707" />
+      <entry key="H4" value="362.05385767863135" />
+      <entry key="D1" value="469.63368144714093" />
+      <entry key="W1" value="492.11853050071284" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -110,37 +115,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.EnigmaDECODE.executor&quot;: &quot;Run&quot;,
-    &quot;Python.EnigmaKey.executor&quot;: &quot;Run&quot;,
-    &quot;Python.EnigmaTime.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.EngimaCode.executor": "Run",
+    "Python.EnigmaDECODE.executor": "Run",
+    "Python.EnigmaKey.executor": "Run",
+    "Python.EnigmaTime.executor": "Run",
+    "Python.Enigma_Main.executor": "Run",
+    "Python.Enigma_Protatip.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.poligon.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "to.speed.mode.migration.done": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

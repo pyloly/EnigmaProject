@@ -18,13 +18,13 @@ def find_key(target_rotors, target_positions, target_reflector):
             positions == target_positions and
             reflector == target_reflector):
             matches.append(key)
-    return matches
+    return matches[0]
 
 
-result = find_key(
-    [2, 1, 5],
-    [1, 7, 5],
-    "B"
-)
-
-print("ключ:", result)
+# result = find_key(
+#     [1, 5, 4],
+#     [0, 7, 25],
+#     "A"
+# )
+# # {'key': 600641, 'rotors': [1, 5, 4], 'positions': [0, 7, 25], 'reflector': 'A'}
+# print("ключ:", result)
